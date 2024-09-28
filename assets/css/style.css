@@ -32,8 +32,9 @@
 }
 
 #welcome-section {
-  background-color: #f8fafc;
-  height: 100vh;
+  /* background-color: #f5f5f5 !important;  */
+  
+  height: auto;
   /*max-height: 750px;*/
 }
 #welcome-section h2 {
@@ -59,18 +60,20 @@
     padding: 30px 15px;
   }
 }
+
 #welcome-section form {
  background-color: #fff;
     border-radius: 1rem;
     -webkit-box-shadow: 0 0.325rem 0.25rem rgb(0 0 0 / 25%);
     box-shadow: 0 0.325rem 0.25rem rgb(0 0 0 / 25%);
     margin: 1rem auto 0;
-    padding: 1.5rem;
     position: relative;
     width: 25rem;
     z-index: 1;
-    margin-top: 18px;
+    margin-top: 18px;  
+    padding: 20px !important; 
 }
+
 #welcome-section form label {
     color: #38417e;
     display: inline-block;
@@ -81,18 +84,18 @@
     max-width: 100%;
 }
 .form-group{
-  /*display: flex;*/
+  display: flex;
   margin-bottom: 24px !important;
 
 }
 .navbar-brand img{
-  /*width: 100px;*/
+  width: 100px;
 }
 #welcome-section form input {
   position: relative;
     width: 100%;
     height: 48px;
-    /*border: 0px;*/
+    border: 0px;
     outline: none;
     border-radius: 0px;
     font-family: Inter, sans-serif;
@@ -117,14 +120,14 @@
   color: #d7e2f3;
 }
 #welcome-section form button {
-  width: 100%;
+  width: unset;
     padding: 15px;
     font-size: 17px;
     font-family: graphik,-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
     font-weight: 500;
     text-transform: inherit;
     letter-spacing: 1px;
-    margin-top: 35px;
+    margin-top: 0px;
     background-color: #e96543;
     border-color: #e96543;
     min-height: 40px;
@@ -142,7 +145,7 @@
   border:  2px solid;
 }
 #welcome-section form .links {
-  /*display: flex;*/
+  display: flex;
   justify-content: space-between;
   padding-top: 25px;
   text-align: center;
@@ -159,6 +162,7 @@
 @media (max-width: 1200px) {
   #welcome-section form {
     width: 45%;
+    
   }
 }
 @media (max-width: 992px) {
@@ -227,6 +231,7 @@
   background-color: white;
   margin: auto;
   text-align: center;
+  
 }
 #middle-section form h4 {
   font-size: 28px;
@@ -340,6 +345,7 @@
   background-color: white;
   margin: auto;
   text-align: center;
+  margin-top: 120px;
 }
 #middle-error-section form h4 {
   font-size: 28px;
@@ -485,11 +491,11 @@ a {
 }
 
 input:focus{
-  /*color: #495057 !important;
+  color: #495057 !important;
     background-color: #fff !important;
     border-color: #5762c2 !important;
     outline: 0 !important;
-    box-shadow: 0 0 0 0.2rem #29307040 !important;*/
+    box-shadow: 0 0 0 0.2rem #29307040 !important;
     outline: none !important;
     box-shadow: none !important;
     border-bottom: 4px solid #119fa1!important;
@@ -504,6 +510,7 @@ input:focus{
     font-size: 28px;
     line-height: 32px;
     margin: 0px 0px 20px;
+    text-align: center;
 }
 .cMEdVO {
     height: 12px;
@@ -511,7 +518,50 @@ input:focus{
     margin-left: 8px;
     margin-top:  5px;
 }
-::placeholder{
+
+.placeholder{
   color: #6f6f6f !important;
   font-size: 15px !important;
+}
+
+.logoonly{
+  width: 102px;
+  height: 102px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 105px
+  
+}
+
+.form-control{
+  background-color: white !important;
+  border: none !important;
+}
+
+.btnsubmit ::after{
+border: none;
+background-color: transparent;
+}
+
+button.btnsubmit{
+  margin-top: 0px !important;
+}
+
+
+
+form.formonly{
+  background-color: transparent !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: auto !important;
+}
+.btnsubmit:focus {
+  outline: none; /* Removes the default focus outline */
+  border: none;  /* Removes any border on focus */
+}
+
+.no-border {
+    border: none; /* No border */
 }
